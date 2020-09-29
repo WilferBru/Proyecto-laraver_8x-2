@@ -14,6 +14,11 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    public function welcome()
+    {
+        return view('auth.login');
+    }
+
     public function store(Request $request)
     {
         $request->validate([
